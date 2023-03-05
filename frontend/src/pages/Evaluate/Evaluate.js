@@ -21,7 +21,7 @@ const Evaluate = () => {
     const fileInput = useRef();
     const uploadFileButton = useRef();
     const continueButton = useRef();
-    const childColumnInput = useRef();
+    // const childColumnInput = useRef();
     const pickForm = useRef();
     const downloadButton = useRef();
     // const uploadFileButton = useRef();
@@ -43,14 +43,14 @@ const Evaluate = () => {
     let [uploadFileStatus, setUploadFileStatus] = useState({visible: false, status: "", msg: ""});
     let [secondStepStatus, setSecondStepStatus] = useState({visible: false, status: "", msg: ""});
     let [thirdStepStatus, setThirdStepStatus] = useState({visible: false, status: "", msg: ""});
-    let [fourthStepStatus, setFourthStepStatus] = useState({visible: false, status: "", msg: ""});
+    // let [fourthStepStatus, setFourthStepStatus] = useState({visible: false, status: "", msg: ""});
 
     let [secondStepVisible, setSecondStepVisible] = useState(false)
     let [thirdStepVisible, setThirdStepVisible] = useState(false)
     let [fourthStepVisible, setFourthStepVisible] = useState(false)
 
     let [childColumnInputValue, setChildColumnInputValue] = useState("A")
-    let [childColumnInputDisabled, setChildColumnInputDisabled] = useState(false)
+    // let [childColumnInputDisabled, setChildColumnInputDisabled] = useState(false)
 
     let [tableData, setTableData] = useState([])
     let [savedFilename, setSavedFilename] = useState("")
@@ -366,7 +366,7 @@ const Evaluate = () => {
 
                 <div className="button-wrapper">
 
-                    <a href="#" download className='button button_accent' onClick={downloadButtonClick} ref={downloadButton}>
+                    <a href="#temp" download className='button button_accent' onClick={downloadButtonClick} ref={downloadButton}>
                         Скачать
                     </a>
                 </div>
