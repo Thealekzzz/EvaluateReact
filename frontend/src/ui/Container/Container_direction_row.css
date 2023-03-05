@@ -1,0 +1,4 @@
+.container_direction_row {
+    flex-direction: row;
+    align-items: center;
+}

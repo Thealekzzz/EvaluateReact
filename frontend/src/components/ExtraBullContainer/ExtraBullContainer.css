@@ -1,0 +1,110 @@
+.bulls-list__bull-container {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    width: 800px;
+
+    background-color: white;
+    border-radius: 10px;
+
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.bulls-list__bull-container-title {
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+
+    font-size: 12px;
+    color: #777;
+}
+
+.bulls-list__bull-container-title_accent {
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+}
+
+.bulls-list__bull-block-title {
+    font-size: 16px;
+    
+}
+
+.bulls-list__bull-info {
+    font-size: 12px;
+}
+
+.bulls-list__bulls-option {
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-columns: 40px 200px repeat(2, 2fr) repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+
+    width: 100%;
+    height: 50px;
+
+    padding: 0 20px;
+
+    border-radius: 5px;
+
+    background-color: #F0F0F0;
+
+    cursor: pointer;
+
+    transition: all .2s;
+}
+
+.bulls-list__bulls-option:hover {
+    opacity: .8;
+}
+
+.bulls-list__bulls-option:has(input:checked) {
+    background-color: #5fbe4e;
+    color: white;
+    font-weight: bold;
+}
+
+.bulls-list__bulls-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.bulls-list__options-head-item {
+    font-size: 12px;
+}
+
+.bulls-list__options-head {
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-columns: 200px repeat(2, 2fr) repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+
+
+    padding-left: 60px;
+    padding-right: 20px;
+    width: 100%;
+
+}
+
+.bulls-list__radio-input {
+    height: 20px;
+    width: 20px;
+}
+
+@media (max-width: 1024px) {
+    .bulls-list__bull-container {
+        width: 100%;
+
+    }
+}
+
