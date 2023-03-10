@@ -339,9 +339,9 @@ export async function fullEvaluate(pathToResultFolder, finalFilename) {
         
         // Для каждой характеристики расчитывается прогноз для потомка
         for (let characteristic of digitalCharacheristics) {
-            let parentChar1 = (parentData1.status === "Unique" || parentData1.status === "Chosen") ? (+parentData1.DBdata?.[characteristic] || 0) : 0
-            let parentChar2 = (parentData2.status === "Unique" || parentData2.status === "Chosen") ? (+parentData2.DBdata?.[characteristic] || 0) : 0
-            let parentChar3 = (parentData3.status === "Unique" || parentData3.status === "Chosen") ? (+parentData3.DBdata?.[characteristic] || 0) : 0
+            let parentChar1 = (parentData1.status === "Unique" || parentData1.status === "Chosen") ? (+parentData1.DBdata[characteristic] || 0) : 0
+            let parentChar2 = (parentData2.status === "Unique" || parentData2.status === "Chosen") ? (+parentData2.DBdata[characteristic] || 0) : 0
+            let parentChar3 = (parentData3.status === "Unique" || parentData3.status === "Chosen") ? (+parentData3.DBdata[characteristic] || 0) : 0
 
             // if (!parentChar1 || !parentChar2 || ! parentChar3) {
             //     console.log(parentData1.name, parentData2.name, parentData3.name);

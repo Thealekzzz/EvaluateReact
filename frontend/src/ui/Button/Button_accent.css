@@ -9,3 +9,8 @@
     
     background-color: #4380f0;
 }
+
+.button_accent:not([disabled]):active {
+    
+    background-color: #2f67cf;
+}

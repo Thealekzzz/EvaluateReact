@@ -1,0 +1,28 @@
+.lead {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 60px;
+}
+
+.lead__title-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.lead__section-title {
+    margin-bottom: 10px;
+    border-left: 5px solid #4380f0;
+    padding-left: 10px;
+}
+
+.lead__section-subtitle {
+    margin-bottom: 50px;
+}
+
+.lead__buttons {
+    display: flex;
+    gap: 10px;
+}

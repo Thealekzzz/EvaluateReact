@@ -5,7 +5,7 @@ import './Button_accent.css'
 
 const ButtonAccent = React.forwardRef((props, ref) => {
     return (
-        <button className='button button_accent' onClick={props.onClick} ref={ref}>
+        <button type={props.type || "button"} className='button button_accent' onClick={props.onClick} ref={ref} style={props.style}>
             {props.children}
         </button>
     );

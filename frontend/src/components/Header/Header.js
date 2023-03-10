@@ -21,7 +21,7 @@ const Header = () => {
                 </div>
 
                 <nav className="header__nav">
-                    <a href="/evaluate" className="button button_accent">Провести расчет</a>
+                    <a href="/createrequest" className="button button_accent">Провести расчет</a>
 
                 </nav>
                 {/* <nav className="header__nav">

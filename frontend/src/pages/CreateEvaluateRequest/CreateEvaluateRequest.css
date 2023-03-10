@@ -1,0 +1,165 @@
+@import url(../../uiStyles/section/section.css);
+@import url(../../uiStyles/white-container/white-container.css);
+@import url(../../uiStyles/link/link.css);
+@import url(../../uiStyles/input-field/input-field.css);
+
+
+.create-request__content {
+    margin-top: 20px;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* LEFT SIDE */
+
+.create-request__aside {
+    width: 400px;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+
+    line-height: 1.4;
+
+}
+
+.create-request__aside-text {
+    font-size: 14px;
+
+}
+
+.create-request__aside-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* RIGHT SIDE */
+
+.create-request__form {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.create-request__section-title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    position: relative;
+}
+
+.create-request__section-title {
+    margin: 0;
+}
+
+.create-request__file-input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.create-request__filename {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.create-request__name-input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    position: relative;
+
+}
+
+.create-request__icon {
+    padding: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+
+    transition: all .2s;
+
+}
+
+.create-request__icon:hover {
+    background-color: rgb(237, 238, 240);
+}
+
+.create-request__icon:active {
+    background-color: rgb(213, 218, 223);
+
+}
+
+.create-request__file-input {
+    display: none;
+    /* visibility: hidden; */
+}
+
+.input-field__input {
+    width: 300px;
+}
+
+.create-request__submit-button-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 12px;
+
+    width: 100%;
+}
+
+.create-request__submit-status {
+    height: 40px;
+    padding: 0 15px;
+    
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+    background-color: seagreen;
+
+    color: white;
+    font-weight: bold;
+
+    border-radius: 5px;
+
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+
+    transition: all .2s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+}
+
+.create-request__submit-status_error {
+    background-color: tomato;
+}
+
+.create-request__submit-status_pending {
+    background-color: #4380f0;
+}
+
+.create-request__submit-status_hidden {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(-10px);
+}
+
+@media (max-width:1024px) {
+    .create-request__content {
+        flex-direction: column;
+    }
+
+    .create-request__aside {
+        width: 100%;
+    }
+}

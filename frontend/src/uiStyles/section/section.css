@@ -1,0 +1,27 @@
+.section {
+    width: 1440px;
+    padding: 50px 20px 0;
+    margin: 0 auto;
+
+
+}
+
+.section__aside {
+    min-width: 300px;
+    min-height: 100px;
+
+    padding: 20px;
+
+}
+
+@media (max-width: 1440px) {
+    .section {
+        width: 1024px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .section {
+        width: 768px;
+    }
+}

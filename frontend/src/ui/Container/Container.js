@@ -4,7 +4,7 @@ import "./Container.css"
 
 const Container = (props) => {
     return (
-        <div className='container'>
+        <div className={['container', ].join(",")}>
             {props.children}
         </div>
     );

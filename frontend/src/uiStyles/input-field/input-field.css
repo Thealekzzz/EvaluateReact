@@ -1,0 +1,82 @@
+/* FIELD */
+
+.input-field {
+    position: relative;
+
+    transition: margin 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+.input-field:has(.input-field__input:not(:placeholder-shown), .input-field__input:focus) {
+    margin-top: 8px;
+}
+
+/* LABEL */
+
+.input-field__label {
+    position: absolute;
+    left: 20px;
+    top: 13px;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    color: grey;
+
+    transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    cursor: text;
+}
+
+.input-field__input:not(:placeholder-shown) + .input-field__label, .input-field__input:focus + .input-field__label {
+    top: -10px;
+    left: 10px;
+    font-size: 12px;
+
+    background-color: #5590E8;
+    padding: 3px 10px;
+    border-radius: 15px;
+
+    font-weight: 600;
+    color: white;
+}
+
+/* INPUT */
+
+.input-field__input {
+    border: 2px solid #5590E8;
+    border-radius: 5px;
+    
+    outline: none;
+
+    width: 100%;
+    
+    padding: 12px 20px;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+
+    background-color: white;
+
+    transition: background-color 0.3s   ;
+
+}
+
+.input-field__input:hover {
+    background-color: #5590E810;
+}
+
+.input-field__input:focus {
+    box-shadow: 0 0 50px #5590E810;
+    background-color: #5590E820;
+}
+
+.input-field__input:invalid {
+    border: 2px solid #F44336;
+    background-color: #e8555510;
+}

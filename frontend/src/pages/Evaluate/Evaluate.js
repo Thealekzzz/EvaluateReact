@@ -288,7 +288,7 @@ const Evaluate = () => {
             <section className="evaluate-container">
                 <div className="text-block">
                     <PageHeading>Расчет показателей потомства</PageHeading>
-                    <SectionHeading>1. Загрузка файла</SectionHeading>
+                    <SectionHeading style={{marginBottom: 10}}>1. Загрузка файла</SectionHeading>
                     <Paragraph style={{maxWidth: 600}}>Ниже можно загрузить таблицу с данными предков и расчитать прогнозируемые показатели потомства</Paragraph>
 
                 </div>
@@ -304,7 +304,7 @@ const Evaluate = () => {
 
             <section className={["evaluate-container", "animated", secondStepVisible ? "" : "hidden"].join(" ")}>
                 <div className="text-block">
-                    <SectionHeading>2. Настройка расчета</SectionHeading>
+                    <SectionHeading style={{marginBottom: 10}}>2. Настройка расчета</SectionHeading>
                     <Paragraph style={{maxWidth: 800}}>Теперь необходимо указать, в каких колонках таблицы расположены данные о предках, такие как кличка, семенной код, идентификационный или инвентарный номер.</Paragraph>
                     <Paragraph style={{maxWidth: 700}}>При отсутствии каки-либо показателей поля нужно оставить пустыми.</Paragraph>
                     <Paragraph style={{maxWidth: 700}}>Для удобства ниже находятся первые строки загруженной таблицы.</Paragraph>
@@ -339,7 +339,7 @@ const Evaluate = () => {
 
             <section className={["evaluate-container", "animated", thirdStepVisible ? "" : "hidden"].join(" ")}>
                 <div className="text-block">
-                    <SectionHeading>3. {thirdStepText.title}</SectionHeading>
+                    <SectionHeading style={{marginBottom: 10}}>3. {thirdStepText.title}</SectionHeading>
                     <Paragraph style={{maxWidth: 800}}>{thirdStepText.paragraph}</Paragraph>
                     
                     <ExtraBullsList extraMatchesBullsMarkers={extraMatchesBullsMarkers} ref={pickForm}/>
@@ -359,7 +359,7 @@ const Evaluate = () => {
 
             <section className={["evaluate-container", "animated", fourthStepVisible ? "" : "hidden"].join(" ")}>
                 <div className="text-block">
-                    <SectionHeading>4. Файл готов к скачиванию</SectionHeading>
+                    <SectionHeading style={{marginBottom: 10}}>4. Файл готов к скачиванию</SectionHeading>
                     <Paragraph style={{maxWidth: 800}}>Показатели потомства расчитаны, и теперь их можно скачать.</Paragraph>
                     
                 </div>
